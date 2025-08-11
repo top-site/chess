@@ -40,7 +40,7 @@ A feature-rich chess application built with Python and Tkinter that supports hum
 
 1. **Clone the repository**:
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/top-site/chess
    cd chess-gui
    ```
 

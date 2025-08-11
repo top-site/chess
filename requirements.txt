@@ -1,0 +1,101 @@
+# Enhanced Python Chess GUI - Requirements
+# Core Dependencies
+python-chess==1.999
+
+# GUI Framework (built-in with Python, no installation needed)
+# tkinter - included with Python standard library
+
+# Standard Library Modules (built-in, no installation needed)
+# threading - for non-blocking engine operations
+# time - for timing controls
+# filedialog - for save/load functionality
+# messagebox - for user notifications
+
+# Development and Build Tools (optional)
+# Uncomment if you want to create standalone executables
+# pyinstaller==5.13.2
+# cx-freeze==6.15.10
+
+# Testing Dependencies (optional)
+# Uncomment if you want to run tests
+# pytest==7.4.3
+# pytest-cov==4.1.0
+
+# Code Quality Tools (optional)
+# Uncomment for development
+# black==23.11.0
+# flake8==6.1.0
+# mypy==1.7.1
+
+# Documentation Tools (optional)
+# Uncomment for generating documentation
+# sphinx==7.2.6
+# sphinx-rtd-theme==1.3.0
+
+# Additional Chess Engines (optional Python wrappers)
+# Note: These are Python wrappers, you still need the actual engines
+# stockfish==3.28.0
+# chess-engine==1.0.0
+
+# Performance Monitoring (optional)
+# psutil==5.9.6
+
+# ===================================================================
+# CHESS ENGINE REQUIREMENTS (EXTERNAL INSTALLATIONS)
+# ===================================================================
+# You must install at least one UCI-compatible chess engine separately:
+#
+# RECOMMENDED ENGINES:
+# 1. Stockfish (Free, Strong)
+#    - Download: https://stockfishchess.org/download/
+#    - Windows: Download .exe file
+#    - Linux: sudo apt-get install stockfish
+#    - macOS: brew install stockfish
+#
+# 2. Komodo (Commercial, Very Strong)
+#    - Purchase from: https://komodochess.com/
+#
+# 3. Leela Chess Zero (Free, Neural Network)
+#    - Download: https://lczero.org/
+#
+# 4. Other UCI Engines:
+#    - Any UCI-compatible engine will work
+#    - Update engine_path in chessgui4.py accordingly
+#
+# ENGINE CONFIGURATION:
+# After installing an engine, update the engine_path variable in chessgui4.py:
+# - If engine is in PATH: self.engine_path = "stockfish"
+# - Full path: self.engine_path = "/usr/bin/stockfish" (Linux/Mac)
+# - Full path: self.engine_path = r"C:\stockfish\stockfish.exe" (Windows)
+
+# ===================================================================
+# SYSTEM REQUIREMENTS
+# ===================================================================
+# - Python 3.7 or higher
+# - Operating System: Windows, macOS, or Linux
+# - Memory: Minimum 512MB RAM (1GB+ recommended for engine battles)
+# - Disk Space: ~50MB for application + engine size
+# - Display: Minimum 1024x768 resolution
+
+# ===================================================================
+# INSTALLATION INSTRUCTIONS
+# ===================================================================
+# 1. Install Python dependencies:
+#    pip install -r requirements.txt
+#
+# 2. Install a chess engine (see ENGINE REQUIREMENTS above)
+#
+# 3. Configure engine path in chessgui4.py
+#
+# 4. Run the application:
+#    python chessgui4.py
+
+# ===================================================================
+# OPTIONAL ENHANCEMENTS
+# ===================================================================
+# If you want to add additional features, consider these packages:
+# - pygame==2.5.2          # For sound effects
+# - pillow==10.1.0         # For custom piece images
+# - requests==2.31.0       # For online features
+# - configparser==6.0.0    # For configuration files
+# - logging==0.4.9.6       # Enhanced logging

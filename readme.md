@@ -41,7 +41,7 @@ A feature-rich chess application built with Python and Tkinter that supports hum
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/top-site/chess
-   cd chess-gui
+   cd chess
    ```
 
 2. **Install Python dependencies**:
